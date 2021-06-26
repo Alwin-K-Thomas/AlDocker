@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t alwin1423/AlDocker -f Dockerfile.dev .
+  - docker build -t alwin1423/aldocker -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=True alwin1423/AlDocker npm run test
+  - docker run -e CI=True alwin1423/aldocker npm run test
